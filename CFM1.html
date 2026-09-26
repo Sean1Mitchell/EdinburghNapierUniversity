@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFM - Module 1</title>
+    <link rel="stylesheet" href="CFM.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Edinburgh Napier University</div>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <div class="content-container">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <a href="index.html" class="sidebar-btn">Homepage</a>
+
+                <button class="sidebar-btn">Corporate Financial Management</button>
+                <div class="sidebar-dropdown">
+                    <a href="CFM1.html">Previous Years Study</a>
+                    <a href="CFM2.html">Agency Theory, Corporate Objectives, and EMH</a>
+                    <a href="CFM3.html">Shareholder Wealth and Company Valuation</a>
+                    <a href="CFM4.html">Cost of Equity using DVM & CAPM</a>
+                    <a href="CFM5.html">Cost of Debt and WACC</a>
+                    <a href="CFM6.html">Theories of Capital Structure</a>
+                    <a href="CFM7.html">Short-Term & Long-Term Finance</a>
+                    <a href="CFM8.html">Capital Investment Appraisal</a>
+                    <a href="CFM9.html">Managing Foreign Currency Risk</a>
+                    <a href="CFM10.html">Divided Policy</a>
+                    <a href="CFM11.html">Revision</a>
+                </div>
+
+                <button class="sidebar-btn">Advanced Management Accounting</button>
+                <div class="sidebar-dropdown">
+                    <a href="AMA1.html">Decision Making Techniques</a>
+                    <a href="AMA2.html">Product Pricing & Decision Making</a>
+                    <a href="AMA3.html">The Changing Practice of MA</a>
+                    <a href="AMA4.html">Budgeting & Constraints</a>
+                    <a href="AMA5.html">Alternative Budgeting Systems</a>
+                    <a href="AMA6.html">Standard Costing & Variance Analysis</a>
+                    <a href="AMA7.html">Performance Management and Control</a>
+                    <a href="AMA8.html">Revision</a>
+                </div>
+
+                <button class="sidebar-btn">Taxation</button>
+                <div class="sidebar-dropdown">
+                    <a href="TAX1.html">UK Tax Systen & NICs</a>
+                    <a href="TAX2.html">Income Tax & Investment Income</a>
+                    <a href="TAX3.html">Income from Employment</a>
+                    <a href="TAX4.html">Income from Self-Employment</a>
+                    <a href="TAX5.html">Corporation Tax</a>
+                    <a href="TAX6.html">Capital Allowances</a>
+                    <a href="TAX7.html">Loss Relief</a>
+                    <a href="TAX8.html">Capital Gains Tax</a>
+                    <a href="TAX9.html">Value Added Tax</a>
+                    <a href="TAX10.html">Inheritance Tax</a>
+                    <a href="TAX11.html">Revision</a>
+                </div>
+
+                <button class="sidebar-btn">Advanced Corporate Reporting</button>
+                <div class="sidebar-dropdown">
+                    <a href="#">Sub-topic 1</a>
+                    <a href="#">Sub-topic 2</a>
+                    <a href="#">Sub-topic 3</a>
+                </div>
+
+                <button class="sidebar-btn">Auditing</button>
+                <div class="sidebar-dropdown">
+                    <a href="#">Sub-topic 1</a>
+                    <a href="#">Sub-topic 2</a>
+                    <a href="#">Sub-topic 3</a>
+                </div>
+
+                <button class="sidebar-btn">Starting a New Business</button>
+                <div class="sidebar-dropdown">
+                    <a href="#">Sub-topic 1</a>
+                    <a href="#">Sub-topic 2</a>
+                    <a href="#">Sub-topic 3</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="progress">
+            <span id="progress-value">&#x1F815;</span>
+        </div>
+
+        <div class="main-content">
+            <div class="content-section">
+                <div class="content-box-intro">
+                    <h1>Last Year Reflection</h1>
+                    <p>In this session, we'll cover;</p>
+                    <p>ARR, Payback Period, NPV, Time value of money, Relevant Cost and Benefits, How to use these
+                        techniques, and the advantages and disadvantages of each. View the instructions on how to download 
+                        the exercise prepared for this module below.
+                    </p>
+                    <p>
+                        <span class="info-wrapper">
+                            <span class="info-button" data-target="modal2" tabindex="0" role="button"
+                                aria-label="More Information">Download</span>
+                        </span>
+                    </p>
+                    <div id="modal2" class="modal-overlay">
+                        <div class="modal-content">
+                            <button class="modal-close" aria-label="Close">&times;</button>
+                            <p>
+                                When you click the download link, it will take you to my Github account - here you'll see the exercise 
+                                file, select "raw", this will download the exercise to your device. Click "<a href="">here</a>" to download it.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="table-of-contents-btn">Table of Contents</button>
+                    <div class="table-of-contents-content">
+                        <a href="#ARR" class="toc-btn">1. ARR</a>
+                        <a href="#payback" class="toc-btn">2. Payback Period</a>
+                        <a href="#NPV" class="toc-btn">3. NPV</a>
+                        <a href="#time-money" class="toc-btn">4. Time Value of Money</a>
+                        <a href="#relevant" class="toc-btn">5. Relevant Cost & Benefits</a>
+                        <a href="#how-to" class="toc-btn">6. How to Use these Techniques</a>
+                        <a href="#adv-dis" class="toc-btn">7. Advantages & Disadvantages</a>
+                    </div>
+                </div>
+                <div class="content-box" id="ARR">
+                    <h2>Accounting Rate of Return (ARR)</h2>
+                    <p>The Accounting Rate of Return, also known as Return on Investment (ROI),
+                        or Return on Capital Employed (ROCE), is the return in profits generated
+                        from the employment of capital.</p>
+                    <p>
+                        The aim is to determine how much per £ of capital invested was returned in profit.
+                        We calculate this with; Avg annual profits / Avg capital invested.
+                    </p>
+                    <p>
+                        This is where the avg profit is the accounting profit for the life of the project divided by the
+                        project length (in years).
+                        And where the avg capital invested would be the total amount of assets the company has tied up
+                        in the project - this is typically
+                        initial investment (or "investment at start") + investments at end divided by 2.
+                    </p>
+                    <p>
+                        <span class="info-wrapper">
+                            <span class="info-button" data-target="modal1" tabindex="0" role="button"
+                                aria-label="More Information">More Information</span>
+                        </span>
+                    </p>
+                    <div id="modal1" class="modal-overlay">
+                        <div class="modal-content">
+                            <button class="modal-close" aria-label="Close">&times;</button>
+                            <p>
+                                Initial investment is capital used at the start of the project, like machinery, plant, inventory etc.
+                                 And investment at end is the accumulation of capital employed throughout the period of the 
+                                 project, like receivables, inventory, cash/equivalents. This is why we add them both at the end of the project, then divide by avg accouting 
+                                 profit to get the ARR.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <h2>Further Information</h2>
+                    <p>
+                        To expand your mind a little, I want us to explore this on a deeper level, however, the information below is not necessarily needed. 
+                         click the "More Information" button above and you'll see how it ties together - that's all you really need.
+                    </p>
+                    <p><b><u>Financial Statements Correlation</u></b></p>
+                    <p>
+                        If we consider the income statement and balance sheet, know the link between them both, those being income/expense and assets/liabilities (to keep it simple). Exploring that allows us to expand on what would fall into the accounting profit and investment aspect of ARR calculations.
+                    </p>
+                    <p><b><u>Income Statement</u></b></p>
+                    <p>
+                        As we’ve mentioned, we’re using the Accounting Profit when we mention profit in ARR calculations. It would be easy to just say “well yes, it’s in the name” but we can easily uncover why it’s the accounting profit we use.
+                    </p>
+                    <p>
+                        The accounting profit accounts for the direct income and expenses (cash and non-cash) aspects of the business's activities – which is no different to ARR, except we look at project specifics, not the business as a whole. The accounting profit accounts for the comings and goings financially, but also disregards taxes and interest, while still accounting for the depreciation and amortisation of non-current assets. Therefore, the accounting profit allows us to view everything relevant to the project.
+                    </p>
+                    <p><b><u>Balance Sheet</u></b></p>
+                    <p>
+                        Before we proceed, it’s important to note that liabilities are only of consideration when we look at the financing of the project, however, our aim is the return of capital employed. Therefore, as far as the balance sheet goes, we only consider assets – hence the need for including depreciation and amortisation within the profit that we use.
+                    </p>
+                    <p><b><u>Non-Current Assets</u></b></p>
+                    <p>
+                        There are a few considerations that need to be made when reviewing the employment of non-current assets. Firstly, we want to determine whether we are employing an asset that we already own, or whether we are purchasing a new one. If we are using one that we already own, the figure added to initial investment is the NBV at the time of the employment. If we are purchasing a new one, it would be the “At Cost”, however, depending on the type of asset, we may also have additional costs, like installing costs, or setup costs.
+                    </p>
+                    <p>
+                        Secondly, we want to look at leasing options – of which we have Operating Lease (short-term), and Finance Lease (long-term). If we take on an operating lease, the asset legally and economically remains with the lessor, in which case, they account for the depreciation/amortisation, not us. And the lease payments would fall within the accounting profit figure, not capital employed (we don’t own the asset) Alternatively, if we take on a finance lease, the asset economically (not legally) remains with us, in which case – in accordance with IFRS 16 ROU (Right-Of-Use) and lease liability are recognised and we account for depreciation/amortisation, and it is the NBV of the leased asset we add to the initial investment figure upon employment.
+                    </p>
+                    <p>
+                        It’s worth noting that the reason for the distinction between both lease types is the fact that we economically benefit from the use of the asset, we technically do both, but with finance lease, we use the asset for most of its useful life, then we buy it, be that automatically at the lease end, or through a bargain purchase option.
+                    </p>
+                    <p><b><u>Current Assets</u></b></p>
+                    <p>
+                        When we review the use of current assets, some may be part of the initial investment, and other accumulate throughout the project life. For example, inventory and cash/equivalents. When we start a project, we’re likely to start with some net working capital, like cash in inventory and receivables (net of payables). This portion will be within the initial investment figure because it represents capital employed in the project.
+                    </p>
+                    <p>
+                        As the project proceeds, the level of working capital will vary from increases to decreases. These changes affect the capital employed throughout the project’s life. Therefore, I want us to imagine we are working with working capital like we do inventory – opening and closing balances. The initial investment is the opening, which would include; inventory, receivables, and cash/equivalents. Throughout the year, these vary, and at the end of the project, we have our closing; inventory, receivables and cash/equivalents - we then divide by 2 to get the average investment figure. Note that although non-current assets are not a part of working capital, they too would be in this figure.
+                    </p>
+                    <p><b><u>Inventory</u></b></p>
+                    <p>
+                        Before we end there, just a little clarification for inventory. The inventory part of working capital is avg invetntory, which is achieved by added up all the stages of production; raw material, work in progress, and finished goods. Which includes both opening and closing (adding them together), and dividing by 2.
+                    </p>
+                </div>
+                <div class="content-box" id="payback">
+                    <h2>Payback Period</h2>
+                    <p>
+                        This calculates how long it takes to recover the initial investment cost. Let's give an exercise a go, so that we can illustrate this.
+                        Let's Assume we are investing £10 into both Project A, and Project B.
+                    </p>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Project A</th>
+                                <th></th>
+                                <th>Project B</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Cashflow In/-Out</td>
+                                <td>Cumulative Cashflow</td>
+                                <td>Cashflow In/-Out</td>
+                                <td>Cumulative Cashflow</td>
+                            </tr>
+                            <tr>
+                                <td>Initial Investment</td>
+                                <td>-10</td>
+                                <td>-10</td>
+                                <td>-10</td>
+                                <td>-10</td>
+                            </tr>
+                            <tr>
+                                <td>Year 1</td>
+                                <td>2</td>
+                                <td>-8</td>
+                                <td>4.3</td>
+                                <td>-5.7</td>
+                            </tr>
+                            <tr>
+                                <td>Year 2</td>
+                                <td>3</td>
+                                <td>-5</td>
+                                <td>5.7</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Year 3</td>
+                                <td>3</td>
+                                <td>-2</td>
+                                <td>1.7</td>
+                                <td>1.7</td>
+                            </tr>
+                            <tr>
+                                <td>Year 4</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Total Return</td>
+                                <td>14</td>
+                                <td></td>
+                                <td>12.7</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Payback</td>
+                                <td>3 Years</td>
+                                <td>4 Months</td>
+                                <td>2</td>
+                                <td>Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="content-table-alternative">
+                        <p>
+                            In Project A we receive the following payments; 2 in year 1, 3 in year 2, 3 in year 3, and 6 in year 4. For Project B, it's 4.3 in year 1, 5.7 in year 2, 1.7 in year 3, and 1 in year 4.
+                        </p>
+                        <p>
+                            Using Project A to explain this simply, we recover 2 of -10 in year 1, leaving -8 to recover. We recover 3 of -8 in year 2, leaving -5. We recover 3 of -5 in year 3, leaving -2. And in year 4 we recover the -2.
+                        </p>
+                    </div>
+                    <p>
+                        Each year, for both 4 year projects, we receive payment for the work we done. Each year, for sake of calculating, we assume payment is made in equal payments. Therefore, to determine the payback period, we want to add up cumulative cashflow to see where we break-even.
+                    </p>
+                    <p>
+                        For Project A, we can see between years 3 and 4 we make break-even. So we know it’s within the 3 years benchmark, all that’s left is determining the months. We do this with the following calculation (on Excel); = - (2 / 6 ) * 12. This gives us 4. Therefore, in Project A, we recover our initial investment in 3 years and 4 months.
+                    </p>
+                    <p>
+                        For Project B, we can see clearly that in year 2 we make break-even, however, we can do the same calculation; = - (5.7 / 5.7 ) * 12. This gives is 12. Therefore, in Project B, we recover our initial investment in 2 years.
+                    </p>
+                    <p>
+                        This can be tricky to follow via text, therefore, if you haven't already, download the exercise so you can see it in action.
+                    </p>
+                    <br>
+                    <hr>
+                    <br>
+                    <h2>Additional Information</h2>
+                    <p><b><u>Drawbacks of Payback</u></b></p>
+                    <p>It’s worth noting that we do have some drawbacks of the Payback Period. For example, there is no allowance for the time value of money, i.e., the value of money at the end of the project as it was at the start. Additionally, payback period ignores the cashflow obtained after the break-even point. And all of this comes down to one major drawback – it relies on an arbitrary cut-off meaning that there is no financial principle that we follow, rather it's based on company policy, or management’s directive. For example, they may say not to accept projects with a life cycle of more than 3 years, but why 3, why not 2 and a half year, or 4 years. Altogether, this makes it somewhat difficult to provide evidence to support the use of payback period calculations.</p>
+                    <p><b><u>Benefits of Payback</u></b></p>
+                    <p>Payback has several benefits, for example, its simplicity. Payback is very easy to implement and understand, making it a good tool to use, in addition to others like ARR. There is also the perceived risk reduction, where we believe that projects that can cover their costs early reduce the firm's exposure. Another would be the focus on liquidity, where if funds are limited, payback highlights projects that return cash sooner, better improving liquidity within the business. Additionally, payback also offers practicality, it can be a great tool for early-stage screening of projects, and act as a supplement to other methods, like ARR (as mentioned). And lastly, there is the indicative value it provides – in theory, because we believe that early return on invesments can give indications to future performance on projects.</p>
+                </div>
+                <div class="content-box" id="NPV">
+                    <h2>NPV</h2>
+                    <p>
+                        In Packback, we mentioned it’s disadvantages, and to overcome them we implement techniques like Net Present Value (NPV). These techniques are known as Discounted Cash Flow (DCF), and NPV is just one of them that we use.
+                    </p>
+                    <p>
+                        We use DCF’s to reduce the cash flows within a project to represent the time value of money. We do this using the firm's cost of capital and deducting capital outlay.
+                    </p>
+                    <p>
+                        NPV is the present value of future cash flows less the cost of the initial investment. A positive NPV can be accepted, whereas a negative NPV should be rejected as the return does not exceed the required rate of return – i.e., the lost capital. This is great if we have several projects to choose from, we can rank NPV in order from most positive to most negative.
+                    </p>
+                    <p>
+                        For example, say we have between Project A and Project B;
+                    </p>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Cashflow</th>
+                                <th>Discount Factor</th>
+                                <th>Present Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>300</td>
+                                <td>0.9091</td>
+                                <td>272.73</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>1000</td>
+                                <td>0.8264</td>
+                                <td>826.40</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>400</td>
+                                <td>0.7513</td>
+                                <td>300.52</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1,399.65</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Initial Investment ></td>
+                                <td>-1,000</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>NPV ></td>
+                                <td>399.65</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Cashflow</th>
+                                <th>Discount Factor</th>
+                                <th>Present Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>600</td>
+                                <td>0.9091</td>
+                                <td>545.46</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>600</td>
+                                <td>0.8264</td>
+                                <td>495.84</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>600</td>
+                                <td>0.7513</td>
+                                <td>450.78</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1,492.08</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Initial Investment ></td>
+                                <td>-1,000</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>NPV ></td>
+                                <td>492.08</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="content-table-alternative">
+                        <p>
+                            Project A has the following cashflows; year 1 – 300, year 2 – 1,000, and year 3 – 400. Project B has the following cashflows; year 1 – 600, year 2 – 600, and year 3 – 600. Both require an immediate initial investment of 1,000 and the cost of capital (required rate of return) is 10%.
+                        </p>
+                        <p>
+                            At a 10% cost of capital discount factor, that is 0.9091 in year 1, 0.8264 in year 2, and 0.7513 in year 4 (for both A and B). We then multiply the cashflow per year and discount factor, and add them together, subtracting the initial investment;
+                        </p>
+                        <p>
+                            <b><u>Project A</u></b> (300 * 0.9091) + (1000 * 0.8264) + (400 * 0.7513) - 1000 = 399 (rounded down).
+                        </p>
+                        <p>
+                            <b><u>Project B</u></b> (600 * 0.9091) + (600 * 0.8264) + (600 * 0.7513) - 1000 = 492 (rounded down).
+                        </p>
+                    </div>
+                    <p>
+                        (As mentioned previously, you can download the exercise to see this in action).
+                    </p>
+                    <p>
+                        Both projects are positive, so could do either, but as we need to choose between them both, we’d choose Project B as it offers a higher positive NPV. However, we also need to consider risk, uncertainty of future cash flows, and are both sets of cash flows equally likely to be realised.
+                    </p>
+                    <p><b><u>Disadvantages</u></b></p>
+                    <p>
+                        Disadvantages of NPV include its heavy dependence on the discount rate being used. However, IRR can make up the difference, because IRR is the discount rate that makes NPV = 0. In other words, the IRR tells us the effective return of the project, meaning we don’t need to determine the cost of capital (the discount rate). That being said, NPV also takes more work than both Payback and ARR, so these techniques can be used at first to filter poor project, then be used for more detail.
+                    </p>
+                    <p><b><u>Key Notes</u></b></p>
+                    <p>
+                        It recognises that £1 today is worth more than £1 tomorrow. That if all projects can be accepted (i.e., no mutual exclusivity) it maximises shareholder utility. Projects with a positive NPV should be accepted since they increase shareholder wealth, while those with negative NPV’s decrease shareholder wealth. It also takes into account investment size – absolute amount of wealth change. It is not as intuitively understandable as a percentage measure. It can handle non-conventional cash flows. Additivity is possible because present values are all measured in today's £s they can be added together. Thus, the returns (NPVs) of a group projects can be calculated. And lastly, it assumes that cash inflows arising during the life of a project are reinvested at the opportunity cost of capital – a reasonable assumption.
+                    </p>
+                </div>
+                <div class="content-box" id="time-money">
+                    <h2>Time Value of Money</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="relevant">
+                    <h2>Relevant Cost & Benefits</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="how-to">
+                    <h2>How to Use these Techniques</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="adv-dis">
+                    <h2>Advantages & Disadvantages</h2>
+                    <p></p>
+                </div>
+                <div class="content-box-1" id="previous/next-page">
+                    <div>
+                        <a href="CFM2.html" class="previous-next-page-btn">Next Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="CFM.js"></script>
+</body>
+
+</html>
