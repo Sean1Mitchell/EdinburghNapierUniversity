@@ -304,3 +304,9 @@ body.sidebar-open {
     --transition-fast: 0.2s ease;
     --transition-main: 0.3s ease;
 }
+
+@media (max-width: 480px) {
+    .lesson-grid {
+        grid-template-columns: 1fr;
+    }
+}
