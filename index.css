@@ -124,6 +124,8 @@ body.sidebar-open {
     overflow: hidden;
 }
 
+
+
 .main-content {
     flex: 1;
     padding: 20px;
@@ -147,59 +149,13 @@ body.sidebar-open {
     padding: 15px;
 }
 
-.content-box-intro > ul {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 260px;
-}
-
-.content-box {
+.content-box-trimester {
     max-width: 100%;
     margin: 20px auto;
     border: 1px solid white;
     border-radius: 15px;
     padding: 15px;
 }
-
-.content-box p {
-    margin-bottom: 20px;
-}
-
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.topic-btn {
-    display: block;
-    text-align: center;
-    width: 100%;
-    background-color: var(--hover-clr);
-    color: var(--text-clr);
-    padding: 10px 20px;
-    border: 1px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.topic-btn a {
-    text-decoration: none;
-    color: white;
-}
-
-.topic-btn:hover {
-    background-color: var(--accent-clr);
-}
-
-.trimester {
-    margin: 10px;
-}
-
 
 h1 {
     text-align: center;
@@ -221,15 +177,6 @@ p {
 
 @media (min-width: 1200px) { /* full laptop (my own) to further and beyond! */
 
-    .topic-btn {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-box-trimester {
-        display: flex;
-    }
-
     h1 {
         font-size: 24px;
     }
@@ -246,22 +193,10 @@ p {
         font-size: 16px;
     }
 
-    .trimester-content {
-        font-size: 20px;
-    }
-
-    .trimester-sidebar {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 1200px) { /* From 772px to 1200px */ /* half laptop to full laptop (my own) */
 
-    .topic-btn {
-        display: flex;
-        flex-direction: column;
-    }
-
     h1 {
         font-size: 24px;
     }
@@ -276,15 +211,12 @@ p {
 
     p {
         font-size: 16px;
-    }
-
-    .trimester-content {
-        font-size: 20px;
     }
 
 }
 
 @media (max-width: 500px) { /* From 0px to 500px */ /* nothing to mobile */
+    
     h1 {
         font-size: 24px;
     }
@@ -301,20 +233,9 @@ p {
         font-size: 14px;
     }
 
-    .logo {
-        font-size: 20px;
-    }
-
-    .trimester-content {
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 771px) { /* From 501px to 771px */ /* mobile to half laptop */
-    .button-grid {
-        display: flex;
-        flex-direction: column;
-    }
 
     h1 {
         font-size: 24px;
@@ -330,10 +251,6 @@ p {
 
     p {
         font-size: 16px;
-    }
-
-    .trimester-content {
-        font-size: 20px;
     }
 
 }
