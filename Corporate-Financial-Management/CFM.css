@@ -181,7 +181,7 @@ h1, h2, h3, p {
 h1 {font-size: 27px;}
 h2 {font-size: 25px;}
 h3 {font-size: 23px;}
-p {font-size: 18px;}
+p {font-size: 16px;}
 
 /* Fix for ul and ol styling - properly centered and responsive */
 .content-box ul,
@@ -190,7 +190,7 @@ p {font-size: 18px;}
   text-align: left;
   margin: 10px auto;
   padding-left: clamp(1.5rem, 3vw, 2.5rem);
-  font-size: 18px;
+  font-size: 16px;
   list-style-position: outside;
   max-width: clamp(300px, 90%, 800px);
 }
@@ -208,6 +208,10 @@ p {font-size: 18px;}
   line-height: 1.5;
   text-align: left;
   font-size: inherit;
+}
+
+.content-box li {
+  margin-bottom: 15px;
 }
 
 .content-box,

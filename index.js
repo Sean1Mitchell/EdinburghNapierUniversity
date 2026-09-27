@@ -36,27 +36,41 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Close sidebar if click outside
+    // --------------------------
+    // MAIN CONTENT GRID DROPDOWNS
+    // --------------------------
+    document.querySelectorAll('.grid-topic').forEach(topic => {
+        topic.addEventListener('click', (event) => {
+            // 1. SAFETY: If they clicked a lesson link inside the drawer, let it open naturally
+            if (event.target.closest('.lesson-card')) {
+                return;
+            }
+
+            // 2. TOGGLE: Find the lesson grid inside this specific card and flip the active class
+            const lessonGrid = topic.querySelector('.lesson-grid');
+            if (lessonGrid) {
+                lessonGrid.classList.toggle('active');
+            }
+        });
+    });
+
+    // --------------------------
+    // GLOBAL CLICK LISTENER (FIXED)
+    // --------------------------
     document.addEventListener("click", e => {
+        // Only run if the sidebar is open and you click completely outside of it and the hamburger button
         if (
             sidebar.classList.contains("active") &&
             !sidebar.contains(e.target) &&
             !hamburger.contains(e.target)
         ) {
-            sidebar.classList.remove("active");
-            body.classList.remove("sidebar-open");
-            closeAllDropdowns();
+            // Make sure clicking a grid-topic drawer doesn't fire this by checking if it's part of one
+            if (!e.target.closest('.grid-topic')) {
+                sidebar.classList.remove("active");
+                body.classList.remove("sidebar-open");
+                closeAllDropdowns();
+            }
         }
     });
-
-    // Put this inside your DOMContentLoaded block instead of the function
-    document.querySelectorAll('.dropdown-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const topic = btn.closest('.grid-topic');
-            const lessonGrid = topic.querySelector('.lesson-grid');
-            lessonGrid.classList.toggle('active');
-        });
-    });
-
 
 });

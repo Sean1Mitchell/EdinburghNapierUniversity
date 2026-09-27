@@ -1,0 +1,98 @@
+/* Page Settings */
+
+:root {
+    --header-height: 60px;
+
+    --main-text-color: white;
+
+    --Back-Home-Font-Color: white;
+    --Back-Home-Background-Color: rgb(51, 218, 255);
+    --Back-Home-Border-Color: rgb(51, 218, 255);
+    --Back-Home-Hover-Font-Color: black;
+    --Back-Home-Hover-Background-Color: rgb(51, 218, 255);
+    --Back-Home-Hover-Border-Color: rgb(51, 218, 255);
+
+    --heading1-font-size: 18px;
+    --heading2-font-size: 18px;
+    --paragraph-font-size: 16px;
+    --list-font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: rgba(4, 10, 22);
+    color: var(--main-text-color);
+}
+
+
+/* Header Style */
+
+header {
+    background: transparent;
+    backdrop-filter: blur(24px);
+    color: var(--main-text-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    height: var(--header-height);
+
+}
+
+.header-left {
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-right {
+    padding: 0 20px 0 20px;
+    font-size: var(--paragraph-font-size);
+}
+
+.header-right a {
+    color: var(--Back-Home-Font-Color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--paragraph-font-size);
+
+    border: 2px solid var(--Back-Home-Background-Color);
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.header-right a:hover {
+    color: var(--Back-Home-Hover-Font-Color);
+    background-color: var(--Back-Home-Hover-Background-Color);
+    border-color: var(--Back-Home-Hover-Border-Color);
+}
+
+
+/* Main Content Style */
+
+.content {
+    color: var(--main-text-color);
+    margin-top: calc(var(--header-height) + 30px);
+    margin-left: 20px;
+    margin-right: 20px;
+}
