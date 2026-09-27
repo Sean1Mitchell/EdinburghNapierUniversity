@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Corporate Objectives Slider</title>
+
+    <style>
+        /* --- 1. CORE VARIABLES & LAYOUT --- */
+        :root {
+            --header-height: 60px;
+            --main-text-color: #ffffff;
+            --paragraph-font-size: 1.3rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #111116;
+            color: var(--main-text-color);
+            overflow: hidden;
+            /* App-like layout, stops window scrolling */
+        }
+
+        /* --- 2. FIXED HEADER FALLBACK --- */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background: #1e1e24;
+            border-bottom: 1px solid #333344;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            z-index: 1000;
+        }
+
+        /* --- 3. MAIN CENTERING WRAPPER --- */
+        .content {
+            color: white;
+            margin-top: calc(var(--header-height));
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+            height: calc(100vh - var(--header-height));
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* --- 4. PRESENTATION STYLING --- */
+        .presentation-heading h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #4a90e2;
+            text-align: center;
+        }
+
+        .presentation-box {
+            background: #1e1e24;
+            border: 1px solid #333344;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            color: #e0e0e0;
+
+            width: 100%;
+            max-width: 1400px;
+            height: 500px;
+
+            /* Flexbox activated to pin buttons down */
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        /* --- 5. INNER DYNAMIC CONTENT FIELD --- */
+        .content-box {
+            color: #e0e0e0;
+            flex-grow: 1;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+            /* Adds a scrollbar safely if lists get huge */
+        }
+
+        /* Typography constraints for elements injected via JavaScript innerHTML */
+        .content-box p {
+            font-size: var(--paragraph-font-size);
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #e0e0e0;
+            max-width: 900px;
+        }
+
+        .content-box ul,
+        .content-box ol {
+            text-align: left;
+            display: inline-block;
+            font-size: var(--paragraph-font-size);
+            line-height: 1.8;
+            color: #ccc;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .content-box strong {
+            color: #ffffff;
+        }
+
+        /* --- 6. NAVIGATION BUTTONS SYSTEM --- */
+        .part-buttons {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            /* Custom fixed layout gap requirement */
+            width: 100%;
+        }
+
+        .previous-next-part-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #22222b;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 1px solid #444454;
+            font-weight: 600;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .previous-next-part-btn:hover {
+            background-color: #333344;
+            border-color: #555565;
+        }
+
+        .page-buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* --- 7. MOBILE OPTIMISATIONS (Width 480px or less) --- */
+        @media (max-width: 480px) {
+            .presentation-box {
+                height: 420px;
+                padding: 20px;
+            }
+
+            .presentation-heading h1 {
+                font-size: 1.5rem;
+            }
+
+            :root {
+                --paragraph-font-size: 1rem;
+            }
+
+            .part-buttons {
+                gap: 20px;
+            }
+
+            /* Shrink the gap so buttons fit thumbs safely */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Mock Fixed Navigation Header -->
+    <header class="fixed-header">
+        <h3>📚 CFM Course Platform</h3>
+    </header>
+
+    <!-- Structural Layout Wrapper -->
+    <div class="content">
+
+        <!-- Slide Title Zone -->
+        <div class="presentation-heading">
+            <h1 id="presentation-title">Corporate Objectives</h1>
+        </div>
+
+        <!-- Widescreen Centered Presentation Component Box -->
+        <div class="presentation-box">
+
+            <!-- Dynamic innerHTML target injection frame -->
+            <div class="content-box" id="presentation-content">
+                <!-- Content will be automatically handled and generated by JavaScript -->
+            </div>
+
+            <!-- Inter-lesson Navigation Parts Interface Row -->
+            <div class="part-buttons">
+                <div>
+                    <a href="#" id="prev-part-btn" class="previous-next-part-btn">Previous Part</a>
+                </div>
+                <div>
+                    <a href="#" id="next-part-btn" class="previous-next-part-btn">Next Part</a>
+                    <!-- Custom Route Redirector Next Page Link -->
+                    <a href="shareholder-wealth.html" id="next-page-btn" class="previous-next-part-btn"
+                        style="display: none; background-color: #4a90e2; border-color: #4a90e2;">Next Page</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Optional global pagination system layout -->
+        <div class="page-buttons">
+            <!-- Hidden by default or left static depending on your global index wireframes -->
+        </div>
+
+    </div>
+
+    <!-- SCRIPT ENGINE MODULE -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            // 1. DATA STORES: Support full HTML lists, weights, and links directly inside the array keys!
+            const lessonData = [
+                {
+                    title: "Corporate Objectives",
+                    htmlContent: `<p>Corporate objectives are the goals and targets that a company sets for itself to achieve in order to fulfill its mission and vision. These objectives guide the company's strategic planning and decision-making processes, helping to align the efforts of employees and stakeholders towards common goals.</p>`
+                },
+                {
+                    title: "Agency Theory",
+                    htmlContent: `
+                        <p><strong>The CORE Conflict:</strong> The separation of corporate ownership (the Shareholders) and corporate operational control (the Directors).</p>
+                        <p>Managers may selfishly prioritize personal utility loops (bonuses, power, executive perks) instead of maximizing fundamental shareholder equity value.</p>
+                    `
+                },
+                {
+                    title: "Efficient Market Hypothesis (EMH)",
+                    htmlContent: `
+                        <p>The EMH claims that capital market asset values completely incorporate all relevant configuration metrics.</p>
+                        <ul>
+                            <li><strong>Weak-Form Efficiency:</strong> Prices reflect all historic technical trading history data points.</li>
+                            <li><strong>Semi-Strong Form:</strong> Prices instantly digest all public balance sheets and statements.</li>
+                            <li><strong>Strong-Form Efficiency:</strong> Prices accurately map even private insider dataset records.</li>
+                        </ul>
+                    `
+                }
+            ];
+
+            let currentPartIndex = 0;
+
+            // 2. DOM INTERFACE ELEMENTS
+            const titleElement = document.getElementById('presentation-title');
+            const contentElement = document.getElementById('presentation-content');
+            const prevBtn = document.getElementById('prev-part-btn');
+            const nextPartBtn = document.getElementById('next-part-btn');
+            const nextPageBtn = document.getElementById('next-page-btn');
+
+            // 3. CORE UPDATE DISPATCHER
+            function renderCurrentSlide() {
+                const activeData = lessonData[currentPartIndex];
+
+                // Inject titles and custom HTML lists/structures cleanly
+                titleElement.textContent = activeData.title;
+                contentElement.innerHTML = activeData.htmlContent;
+
+                // Handle first slide previous button visibility boundaries
+                if (currentPartIndex === 0) {
+                    prevBtn.style.visibility = 'hidden';
+                } else {
+                    prevBtn.style.visibility = 'visible';
+                }
+
+                // Handle final slide route swap to target next file
+                if (currentPartIndex === lessonData.length - 1) {
+                    nextPartBtn.style.display = 'none';
+                    nextPageBtn.style.display = 'inline-block';
+                } else {
+                    nextPartBtn.style.display = 'inline-block';
+                    nextPageBtn.style.display = 'none';
+                }
+            }
+
+            // 4. ACTION LISTENERS
+            nextPartBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentPartIndex < lessonData.length - 1) {
+                    currentPartIndex++; renderCurrentSlide();
+
+                }
+            });
+
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault(); if (currentPartIndex > 0) { currentPartIndex--; renderCurrentSlide(); }
+            });
+            
+            // 5. INITIAL ENGINE STARTUP RUN
+            renderCurrentSlide();});
