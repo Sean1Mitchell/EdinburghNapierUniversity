@@ -88,6 +88,13 @@ header {
     border-color: var(--Back-Home-Hover-Border-Color);
 }
 
+.subject-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--Back-Home-Background-Color);
+    margin-top: 4px;
+}
+
 
 /* Main Content Style */
 
@@ -124,12 +131,28 @@ header {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     height: 500px;
 }
 
 .content-box {
     flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.content-box ul, .content-box ol {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: var(--list-font-size);
+}
+
+.content-box li {
+    margin-bottom: 5px;
+}
+
+.content-box p {
     margin-bottom: 20px;
 }
 

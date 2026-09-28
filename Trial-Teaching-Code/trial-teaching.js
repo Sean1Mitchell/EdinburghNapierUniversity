@@ -4,26 +4,58 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Corporate Objectives",
             htmlContent: `
-            <p><strong>Corporate Objectives</strong> are the targets a listed-company has in order to achieve a desired outcome. However, as the owners of
-            the company, the ultime target is to achieve those of the shareholders. Shareholder, however, vary in their desired outcomes and the ways in 
-            which they want the company to achieve them.</p>
-            <p>For example:</p>
+            <p><strong>Corporate Objectives</strong> are the targets a listed-company has in order to achieve a desired outcome. However, 
+            as the owners of the company, the ultime target is to achieve those of the shareholders. Shareholder, however, vary in their 
+            desired outcomes and the ways in which they want the company to achieve them. For example:</p>
             <ul>
             <li><strong>Remunerations:</strong> Dividends.</li>
-            <li><strong>Empire Building:</strong>Assets, Influence, Reach, Expansion.</li>
-            <li><strong>Employee Harmony:</strong>Avoidance of Strikes and Redundancies.</li>
-            <li><strong>Survival:</strong>.</li>
-            <li><strong>Quality:</strong>.</li>
-            <li><strong>CRS/ESG:</strong>.</li>
-            <li><strong>Low Risk:</strong>.</li>
-            <li><strong>Market Share:</strong>.</li>
-            </ul>`
+            <li><strong>Empire Building:</strong> Assets, Influence, Reach, Expansion.</li>
+            <li><strong>Employee Harmony:</strong> Avoidance of Strikes and Redundancies.</li>
+            <li><strong>Survival:</strong> Stability, Low Risk, Higher Liquidity.</li>
+            <li><strong>Quality:</strong> Product/Service Quality.</li>
+            <li><strong>CRS/ESG:</strong> Corporate Responsibility and Sustainability.</li>
+            <li><strong>Low Risk:</strong> Conservative Financial Management.</li>
+            <li><strong>Market Share:</strong> Competitive Positioning.</li>
+            </ul>
+            <p>Failure to balance objectives collectively results in reduced value for shareholders that are having their objectives forgone.
+            For example; high dividends means less reinvestment for growth, higher growth means less dividends, high CRS/ESG means less short-term
+            profit (but better long-term survivability). Thus, the goal is to focus on balancing these objectives collectively.</p>
+            `
         },
         {
             title: "Agency Theory",
             htmlContent: `
-            <p><strong>The CORE Conflict:</strong> The separation of corporate ownership (the Shareholders) and corporate operational control (the Directors).</p>
-            <p>Managers may selfishly prioritize personal utility loops (bonuses, power, executive perks) instead of maximizing fundamental shareholder equity value.</p>`
+            <p>The <strong>Agency Theory</strong> is the idea that although shareholders elect management to run the business, due to their knowledge
+            and experience, they may be inclined to act in their own personal objectives, as opposed to those set by the shareholders. This is "The 
+            Agency Problem". Shareholders are the principles and Management are the agents acting on their behalf, or at least they should be. Some 
+            of the personal objectives that management may be influenced by include:</p>
+            <ul>
+            <li><strong>Remunerations:</strong> Increased cost, reduced reinvestment of profits and dividend payout.</li>
+            <li><strong>Job Satisfaction:</strong> Prioritising projects of personal exposure or glamour, less the returns they offer.</li>
+            <li><strong>Job Security:</strong> Avoidant of reasonable risk due to fears of being replaced.</li>
+            <li><strong>Maximising Firm Value:</strong> Counterintuitive, but focuses on short-term recognition as opposed to long-term value.</li>
+            </ul>
+            <p>This disconnect between shareholders and management do not just affect profits, reinvestment, and growth, they also extend to the 
+            wider markets perception of the company's future prospects, including, earning the returns investors would like to receive that would 
+            encourage their invetment in the company (i.e., purchasing shares).</p>
+            `
+        },
+        {
+            title: "Agency Theory",
+            htmlContent: `
+            <p><strong>The Agency Monitoring Mechanisms</strong></p>
+            <p>There are ways in which shareholders can mitigate the agency problem, and they are broken into two mechanisms; internal and external</p>
+            <ol>
+            <strong><li>Internal Mechanisms</li></strong>
+            <ul>
+            <li><strong>Board of Directors:</strong> .</li>
+            <li><strong>Pay Incentives:</strong> .</li>
+            <li><strong>Internal Audits:</strong> .</li>
+            <li><strong>Ownership Structure:</strong> .</li>
+            <li><strong>Career Incentives:</strong> .</li>
+            </ul>
+            </ol>
+            `
         },
         {
             title: "Efficient Market Hypothesis (EMH)",
