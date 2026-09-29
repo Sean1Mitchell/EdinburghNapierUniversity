@@ -135,7 +135,7 @@ header {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
     height: 500px;
 }
 
@@ -191,6 +191,10 @@ header {
     --heading2-font-size: 14px;
     --paragraph-font-size: 12px;
     --list-font-size: 12px;
+    }
+
+    .content {
+        margin-top: 40px;
     }
 
     .presentation-box {
