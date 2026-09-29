@@ -118,7 +118,7 @@ header {
     margin-bottom: 20px;
 }
 
-.presentation-title {
+.presentation-title h1 {
     font-size: var(--heading1-font-size);
 }
 
@@ -142,6 +142,8 @@ header {
 .content-box {
     flex-grow: 1;
     margin-bottom: 20px;
+    overflow-y: auto;
+    padding-bottom: 20px;
 }
 
 .content-box ul, .content-box ol {
@@ -189,8 +191,12 @@ header {
     :root {
     --heading1-font-size: 14px;
     --heading2-font-size: 14px;
-    --paragraph-font-size: 12px;
-    --list-font-size: 12px;
+    --paragraph-font-size: 13px;
+    --list-font-size: 13px;
+    }
+
+    .html {
+        scroll-behavior: smooth;
     }
 
     .content {
@@ -198,17 +204,18 @@ header {
     }
 
     .presentation-box {
-        max-width: 300px;
-        height: 500px;
-        padding: 5px;
+        max-width: 320px;
+        height: 450px;
+        padding: 20px;
     }
 
-    .presentation-title {
+    #presentation-title {
         font-size: var(--heading2-font-size);
     }
 
     .previous-next-part-btn {
         padding: 5px;
+        margin-bottom: 10px;
     }
 
 }

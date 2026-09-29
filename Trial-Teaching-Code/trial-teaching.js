@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Corporate Objectives",
             htmlContent: `
-            <p><strong>Corporate Objectives</strong> are the targets a listed-company has in order to achieve a desired outcome. However, 
-            as the owners of the company, the ultime target is to achieve those of the shareholders. Shareholder, however, vary in their 
-            desired outcomes and the ways in which they want the company to achieve them. For example:</p>
+            <p><strong>Corporate Objectives</strong> are the targets a listed-company has in order to achieve the desired outcome of its 
+            shareholders. For example:</p>
             <ul>
             <li><strong>Remunerations:</strong> Dividends.</li>
             <li><strong>Empire Building:</strong> Assets, Influence, Reach, Expansion.</li>
@@ -17,27 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
             <li><strong>Low Risk:</strong> Conservative Financial Management.</li>
             <li><strong>Market Share:</strong> Competitive Positioning.</li>
             </ul>
-            <p>Failure to balance objectives collectively results in reduced value for shareholders that are having their objectives forgone.
-            For example; high dividends means less reinvestment for growth, higher growth means less dividends, high CRS/ESG means less short-term
-            profit (but better long-term survivability). Thus, the goal is to focus on balancing these objectives collectively.</p>
+            <p>Failure to balance different shareholder objectives collectively results in reduced value for shareholders that are having their
+            objectives forgone.</p>
             `
         },
         {
             title: "Agency Theory",
             htmlContent: `
-            <p>The <strong>Agency Theory</strong> is the idea that although shareholders elect management to run the business, due to their knowledge
-            and experience, they may be inclined to act in their own personal objectives, as opposed to those set by the shareholders. This is "The 
-            Agency Problem". Shareholders are the principles and Management are the agents acting on their behalf, or at least they should be. Some 
-            of the personal objectives that management may be influenced by include:</p>
+            <p>The <strong>Agency Theory</strong> is the idea that management may be inclined to act for their own personal objectives, as opposed to those of the shareholders.
+            Some of the personal objectives that management may be influenced by include:</p>
             <ul>
             <li><strong>Remunerations:</strong> Increased cost, reduced reinvestment of profits and dividend payout.</li>
             <li><strong>Job Satisfaction:</strong> Prioritising projects of personal exposure or glamour, less the returns they offer.</li>
             <li><strong>Job Security:</strong> Avoidant of reasonable risk due to fears of being replaced.</li>
             <li><strong>Maximising Firm Value:</strong> Counterintuitive, but focuses on short-term recognition as opposed to long-term value.</li>
             </ul>
-            <p>This disconnect between shareholders and management do not just affect profits, reinvestment, and growth, they also extend to the 
-            wider markets perception of the company's future prospects, including, earning the returns investors would like to receive that would 
-            encourage their invetment in the company (i.e., purchasing shares).</p>
+            <p>This disconnect affect profits, reinvestment, and growth, but they also extend to the wider markets perception of the company's future prospects.</p>
             `
         },
         {
