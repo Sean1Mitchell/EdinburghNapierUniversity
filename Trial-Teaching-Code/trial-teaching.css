@@ -62,7 +62,7 @@ header {
 
 .header-left {
     padding: 0 20px 0 20px;
-    font-size: 18px;
+    font-size: var(--heading1-font-size);
     font-weight: bold;
 }
 
@@ -89,7 +89,7 @@ header {
 }
 
 .subject-subtitle {
-    font-size: 16px;
+    font-size: var(--paragraph-font-size);
     font-weight: normal;
     color: var(--Back-Home-Background-Color);
     margin-top: 4px;
@@ -116,6 +116,10 @@ header {
     font-size: var(--paragraph-font-size);
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.presentation-title {
+    font-size: var(--heading1-font-size);
 }
 
 .presentation-box {
@@ -154,6 +158,7 @@ header {
 
 .content-box p {
     margin-bottom: 20px;
+    font-size: var(--paragraph-font-size);
 }
 
 .part-buttons {
@@ -178,4 +183,28 @@ header {
 .previous-next-part-btn:hover {
     background-color: var(--Back-Home-Hover-Background-Color);
     color: var(--Back-Home-Hover-Font-Color);
+}
+
+@media (max-width: 480px) {
+    :root {
+    --heading1-font-size: 14px;
+    --heading2-font-size: 14px;
+    --paragraph-font-size: 12px;
+    --list-font-size: 12px;
+    }
+
+    .presentation-box {
+        max-width: 300px;
+        height: 500px;
+        padding: 5px;
+    }
+
+    .presentation-title {
+        font-size: var(--heading2-font-size);
+    }
+
+    .previous-next-part-btn {
+        padding: 5px;
+    }
+
 }
