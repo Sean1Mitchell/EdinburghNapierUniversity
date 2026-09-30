@@ -106,8 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
             asset's underlying value.</li>
             </ul>
             </ol>
-            <p>The result is that companies earn the financing they require and investors earn a risk relative to the risk of investing,
-            making the exchange between the two sufficient and creating an incentive for it to continue.</p>
+            <p>The result is that companies earn the financing they require and investors earn a return relative to the risk of investing,
+            making the exchange between the two sufficient and creating an incentive for it to continue indefinitely.</p>
             `
         },
         {
